@@ -1,0 +1,62 @@
+﻿/*body{
+    background-color:#eee;
+}*/
+
+
+.navbar-inverse {
+  background-color: #4d76a1;
+  border-color: #080808;
+}
+
+
+.btn-primary{
+   background-color: #4d76a1;
+   border-color:#40668e;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #6fabbd;
+    border-color: #62a9be;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff
+}
+
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color:  #ccc;
+  background-color: transparent;
+  outline:none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navlink2{
+    font-size:14px;
+    padding-left:30px;
+    outline:none !important;
+}
+
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #eee;
+}
+
+.jumbotron{
+    padding-bottom: 0 !important;
+}
+
+
+
+
+

@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteveComputerTraining.WebAPI", "SteveComputerTraining.WebAPI\SteveComputerTraining.WebAPI.csproj", "{1DF46243-29EB-4DE3-9FCF-D7049A72BC63}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SteveComputerTraining.Client", "SteveComputerTraining.Client", "{DFB77BF7-EC4A-4C3F-8905-17FE22A7B903}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_6541"
+		Debug.AspNetCompiler.PhysicalPath = "SteveComputerTraining.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6541\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_6541"
+		Release.AspNetCompiler.PhysicalPath = "SteveComputerTraining.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6541\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "6541"
+		SlnRelativePath = "SteveComputerTraining.Client\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteveComputerTraining.DTO", "SteveComputerTraining.DTO\SteveComputerTraining.DTO.csproj", "{54EAE8F1-4A46-4292-BBE6-EA7E1396E5F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DF46243-29EB-4DE3-9FCF-D7049A72BC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF46243-29EB-4DE3-9FCF-D7049A72BC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF46243-29EB-4DE3-9FCF-D7049A72BC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF46243-29EB-4DE3-9FCF-D7049A72BC63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB77BF7-EC4A-4C3F-8905-17FE22A7B903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB77BF7-EC4A-4C3F-8905-17FE22A7B903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB77BF7-EC4A-4C3F-8905-17FE22A7B903}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB77BF7-EC4A-4C3F-8905-17FE22A7B903}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{54EAE8F1-4A46-4292-BBE6-EA7E1396E5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EAE8F1-4A46-4292-BBE6-EA7E1396E5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EAE8F1-4A46-4292-BBE6-EA7E1396E5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EAE8F1-4A46-4292-BBE6-EA7E1396E5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://stevem847.visualstudio.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = SteveComputerTraining.Client
+		SccProjectName1 = SteveComputerTraining.Client
+		SccLocalPath1 = SteveComputerTraining.Client
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = SteveComputerTraining.DTO\\SteveComputerTraining.DTO.csproj
+		SccProjectName2 = SteveComputerTraining.DTO
+		SccLocalPath2 = SteveComputerTraining.DTO
+		SccProjectUniqueName3 = SteveComputerTraining.WebAPI\\SteveComputerTraining.WebAPI.csproj
+		SccProjectName3 = SteveComputerTraining.WebAPI
+		SccLocalPath3 = SteveComputerTraining.WebAPI
+	EndGlobalSection
+EndGlobal

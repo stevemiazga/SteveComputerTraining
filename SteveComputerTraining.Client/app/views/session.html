@@ -1,0 +1,39 @@
+﻿<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <h4>Class Reservation</h4>
+    </div>
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="form-control" ng-model="session.courseTitle" readonly />
+        </div>
+        <div class="form-group">
+            <label for="startDate">Start Date:</label>
+            <input type="text" id="startDate" class="form-control" ng-model="session.startDate | date:'MM/dd/yyyy'" readonly />
+        </div>
+        <div class="form-group">
+            <label for="endDate">End Date:</label>
+            <input type="text" id="endDate" class="form-control" ng-model="session.endDate | date:'MM/dd/yyyy'" readonly />
+        </div>
+        <div class="form-group">
+            <label for="classTime">Class Time:</label>
+            <input type="text" id="classTime" class="form-control" ng-model="session.classTime" readonly />
+        </div>
+        <button class="btn btn-primary" ng-click="deleteSessionBySessionId(session)">Delete</button>
+        <button class="btn btn-primary" ng-click="cancelSession()">Cancel</button>
+    </div>
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>

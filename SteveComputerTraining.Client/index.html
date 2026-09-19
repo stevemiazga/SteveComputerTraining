@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Steve's Computer Training</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="Steve's Computer Training'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body ng-app="ComputerTrainingApp" data-ng-controller="indexController">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="btn btn-success navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/home">Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="navlink2" href="#/about"> About </a></li>
+                    <li><a class="navlink2" href="#/contact"> Contact </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li data-ng-hide="!authentication.isAuth"><a ng-cloak href="#">Welcome {{authentication.userName}} </a></li>
+                    <li data-ng-hide="!authentication.isAuth"><a ng-cloak href="#/sessions/{{authentication.userName}}"> Class Reservations </a></li>
+                    <li data-ng-hide="!authentication.isAuth"><a ng-cloak href="" data-ng-click="logOut()"><span class="glyphicon glyphicon-log-out"> Logout </span></a></li>
+                    <li data-ng-hide="authentication.isAuth"> <a href="#/login"><span class="glyphicon glyphicon-log-in"> Login </span></a></li>
+                    <li data-ng-hide="authentication.isAuth"> <a href="#/signup"><span class="glyphicon glyphicon-user"> SignUp </span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Steve's Computer Training</h2>
+                <img class="img-rounded" src="Images/boy26-240x224.png" alt="computerguy" />
+                <h3 style="padding:10px;">Check out our training classes! Sign up for a class.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div data-ng-view="">
+        </div>
+    </div>
+    <hr />
+    <div ng-cloak id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <br />
+                    <p ng-cloak class="text-muted" >&copy; {{dateTitle}} Steve Miazga</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Library Scripts -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- Directives -->
+    <!--<script src="app/directives/myLoadingSpinner.js"></script>-->
+
+    <!-- Services -->
+    <script src="app/services/authDataService.js"></script>
+    <script src="app/services/authInterceptorService.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/coursesService.js"></script>
+    <script src="app/services/schedulesService.js"></script>
+    <script src="app/services/sessionsService.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/indexController.js"></script>
+    <script src="app/controllers/homeController.js"></script>
+    <script src="app/controllers/loginController.js"></script>
+    <script src="app/controllers/signupController.js"></script>
+    <script src="app/controllers/schedulesController.js"></script>
+    <script src="app/controllers/reserveController.js"></script>
+    <script src="app/controllers/sessionsController.js"></script>
+</body>
+</html>
